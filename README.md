@@ -61,6 +61,8 @@ each is recognized as a separate device in Home Assistant (verified with two phy
 4. Python から使う場合は `pip install esp32io` または `pip install esp32io-mqtt`
 5. Node-RED からは標準のHTTPリクエストノード、またはMQTTノードでそのまま接続可能
 
+<English>
+
 1. Flash [esp32io-firmware](https://github.com/noritama-lab/esp32io-firmware) or [esp32io-mqtt-firmware](https://github.com/noritama-lab/esp32io-mqtt-firmware) onto an ESP32-S3 dev board (e.g. ESP32-S3-DevKitC-1), depending on your use case
 2. If you're working at 3.3V–5V logic levels, the dev board alone is sufficient ([esp32io-hw](https://github.com/noritama-lab/esp32io-hw) is not required)
 3. For industrial 24V equipment requiring isolation and protection circuitry, add the [esp32io-hw](https://github.com/noritama-lab/esp32io-hw) hardware
