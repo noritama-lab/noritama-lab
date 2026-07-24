@@ -32,10 +32,12 @@ This ecosystem consists of three layers: hardware, firmware (two variants), and 
 
 | こんな人におすすめ / Recommended for | 選ぶべきもの / Choose |
 |---|---|
-| Home Assistantで自動検出したい、非同期でイベント駆動したい / Want Home Assistant auto-discovery, event-driven updates | **MQTT版** (esp32io-mqtt-firmware + esp32io-mqtt) |
-| シンプルなHTTPリクエストで叩きたい、ブローカーを立てたくない / Want simple HTTP requests, no broker required | **HTTP版** (esp32io-firmware + esp32io) |
+| Home Assistantで自動検出したい、非同期でイベント駆動したい / Want Home Assistant auto-discovery, event-driven updates | **MQTT版** (esp32io-mqtt-firmware) |
+| シンプルなHTTPリクエストで叩きたい、ブローカーを立てたくない / Want simple HTTP requests, no broker required | **HTTP版** (esp32io-firmware) |
 | Excel VBA・curlなど軽量な環境から使いたい / Want to control from lightweight environments like Excel VBA or curl | どちらでも可（生JSON API） / Either (raw JSON API available) |
-| 工場の24Vリレー・センサーを安全に接続したい / Want to safely connect 24V industrial relays/sensors | **esp32io-hw**（オムロンLYシリーズ相当を想定） / esp32io-hw (designed for Omron LY-series relays or equivalent) |
+
+Pythonクライアントは両版ともPyPI公開済みです（`pip install esp32io` / `pip install esp32io-mqtt`）。工場の24Vリレー・センサーを安全に接続したい場合は [esp32io-hw](https://github.com/noritama-lab/esp32io-hw) を参照してください。  
+Python clients for both versions are published on PyPI (`pip install esp32io` / `pip install esp32io-mqtt`). For safely connecting 24V industrial relays or sensors, see [esp32io-hw](https://github.com/noritama-lab/esp32io-hw).
 
 ---
 
