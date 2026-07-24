@@ -20,7 +20,7 @@ This ecosystem consists of three layers: hardware, firmware (two variants), and 
 | レイヤー / Layer | HTTP版 / HTTP version | MQTT版 / MQTT version |
 |---|---|---|
 | ファームウェア / Firmware | [esp32io-firmware](https://github.com/noritama-lab/esp32io-firmware) | [esp32io-mqtt-firmware](https://github.com/noritama-lab/esp32io-mqtt-firmware) |
-| Pythonクライアント / Python client | [esp32io](https://pypi.org/project/esp32io/) (PyPI) | [esp32io-mqtt](https://pypi.org/project/esp32io-mqtt/) (PyPI) |
+| Pythonクライアント / Python client | [esp32io](https://pypi.org/project/esp32io/) (PyPI) / [esp32io-api](https://github.com/noritama-lab/esp32io-api) (GitHub) | [esp32io-mqtt](https://pypi.org/project/esp32io-mqtt/) (PyPI) / [esp32io-mqtt-api](https://github.com/noritama-lab/esp32io-mqtt-api) (GitHub) |
 | ハードウェア / Hardware | [esp32io-hw](https://github.com/noritama-lab/esp32io-hw)（共通 / shared） | 同左 / same |
 
 > ハードウェア（基板）はHTTP版・MQTT版で共通です。用途に応じてファームウェアを選択してください。  
