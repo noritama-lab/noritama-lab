@@ -39,6 +39,20 @@ This ecosystem consists of three layers: hardware, firmware (two variants), and 
 
 ---
 
+## 🏠 Home Assistant連携 / Home Assistant Integration
+
+**MQTT版**は、Home AssistantのMQTT Discoveryに対応しています。  
+デバイスの電源を入れて配線するだけで、YAMLの手動設定なしにDI/DO/ADC/PWMなどが個別のエンティティとして自動的に登録されます。  
+The **MQTT version** supports Home Assistant's MQTT Discovery.  
+Simply power on and wire the device — DI/DO/ADC/PWM channels are automatically registered as individual entities without any manual YAML configuration.
+
+デバイスIDはデバイス固有の値のため、複数台を同一ネットワークに追加してもトピックが衝突せず、  
+Home Assistant側で自動的に別デバイスとして認識されます（実機2台で確認済み）。  
+Since the device ID is unique to each unit, adding multiple devices to the same network does not cause topic collisions —  
+each is recognized as a separate device in Home Assistant (verified with two physical devices).
+
+---
+
 ## 🚀 はじめに / Getting Started
 
 1. まずは [esp32io-hw](https://github.com/noritama-lab/esp32io-hw) でハードウェアを用意（KiCad回路図・3Dプリント筐体データを公開）
@@ -71,6 +85,18 @@ The development story — from a simple serial-JSON idea to a full industrial I/
 This is an individually developed, open-source project without third-party certification.  
 Please validate the design against your own environment before production use, especially when connecting to industrial equipment.  
 See each repository's README and disclaimer for details.
+
+---
+
+## 🧩 その他のプロジェクト / Other Projects
+
+esp32ioシリーズ以外にも、いくつかの小規模なツール・ライブラリを公開しています。  
+Besides the esp32io series, a few smaller tools and libraries are also published here.
+
+- [pyside6-stylekit](https://github.com/noritama-lab/pyside6-stylekit) — PySide6向けの自作UIキット（テーマ・スタイル済みウィジェット集） / A self-made UI kit for PySide6 (themes and pre-styled widgets)
+
+> 今後も新しいプロジェクトが追加される可能性があります。最新の一覧は [Repositories タブ](https://github.com/noritama-lab?tab=repositories) をご確認ください。  
+> More projects may be added over time. See the [Repositories tab](https://github.com/noritama-lab?tab=repositories) for the latest list.
 
 ---
 
