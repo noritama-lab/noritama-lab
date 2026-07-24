@@ -1,7 +1,9 @@
 # Noritama-Lab
 
-製造業の生産技術エンジニアが個人開発している、ESP32-S3ベースの産業向けI/Oプラットフォームです。  
-An industrial-oriented I/O platform based on ESP32-S3, individually developed by a manufacturing/production engineering engineer.
+製造業の生産技術エンジニアが個人開発している開発ラボです。  
+現在は ESP32-S3 ベースの産業向けI/Oプラットフォーム「esp32ioシリーズ」を中心に公開しています。  
+An individual R&D lab run by a manufacturing/production engineering engineer.  
+Currently centered around the "esp32io" series — an industrial-oriented I/O platform based on ESP32-S3.
 
 Home Assistantでの家庭用途から、工場の24V機器を扱う産業用途まで、  
 **「配線するだけで、好きなソフトから制御できるI/Oデバイス」**を目指しています。  
