@@ -79,11 +79,12 @@ This project started from a small idea: controlling things from Python over a se
 - **USB/HTTP版までの開発記録**（シリアル通信からWi-Fi対応までの過程）  
   👉 [【開発記録】ESP32‑S3 × Python で作るI/Oデバイス連載](https://qiita.com/Noritama-Lab/items/cae87dc4cd67fe438c82)  
   👉 [ESP32-S3 をあらゆるソフトから制御できる IO プラットフォーム](https://qiita.com/Noritama-Lab/items/044451701336c6c17af4)
-
-- **プロジェクト全体の現在地**（MQTT版・Home Assistant対応・産業向けハードウェアを含む最新版）  
+- **MQTT対応版への発展**（Home Assistant連携詳細記事は準備中）  
+  👉 [自作のESP32-S3ベースIoTデバイス「ESP32IO」をMQTT対応へアップデート](https://qiita.com/Noritama-Lab/items/c074b20176145cb8e963)
+- **プロジェクト全体の現在地**（HTTP版/MQTT版どちらも含む最新の全体像）  
   👉 [【現在地】ESP32-S3 IO プラットフォーム「esp32io」でできること](リンク後で追加)
 
-Development records for the USB/HTTP version are documented on Qiita (Japanese, linked above). For the latest overview including the MQTT version and Home Assistant integration, see the "current state" article linked above.
+Development records for the USB/HTTP version, and the subsequent MQTT update, are documented on Qiita (Japanese, linked above). For the latest overview covering both versions, see the "current state" article linked above.
 
 ---
 
