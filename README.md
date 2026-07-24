@@ -55,10 +55,17 @@ each is recognized as a separate device in Home Assistant (verified with two phy
 
 ## 🚀 はじめに / Getting Started
 
-1. まずは [esp32io-hw](https://github.com/noritama-lab/esp32io-hw) でハードウェアを用意（KiCad回路図・3Dプリント筐体データを公開）
-2. 用途に応じて [esp32io-firmware](https://github.com/noritama-lab/esp32io-firmware) または [esp32io-mqtt-firmware](https://github.com/noritama-lab/esp32io-mqtt-firmware) を書き込み
-3. Python から使う場合は `pip install esp32io` または `pip install esp32io-mqtt`
-4. Node-RED からは標準のHTTPリクエストノード、またはMQTTノードでそのまま接続可能
+1. まずはESP32-S3-DevKitC-1などの開発ボードに、用途に応じて [esp32io-firmware](https://github.com/noritama-lab/esp32io-firmware) または [esp32io-mqtt-firmware](https://github.com/noritama-lab/esp32io-mqtt-firmware) を書き込み
+2. 3.3V〜5Vのロジックレベルで使う場合は、開発ボードだけでそのまま利用可能です（[esp32io-hw](https://github.com/noritama-lab/esp32io-hw) は不要）
+3. 工場の24V機器など、絶縁・保護回路が必要な環境で使う場合は [esp32io-hw](https://github.com/noritama-lab/esp32io-hw) のハードウェアを追加で用意
+4. Python から使う場合は `pip install esp32io` または `pip install esp32io-mqtt`
+5. Node-RED からは標準のHTTPリクエストノード、またはMQTTノードでそのまま接続可能
+
+1. Flash [esp32io-firmware](https://github.com/noritama-lab/esp32io-firmware) or [esp32io-mqtt-firmware](https://github.com/noritama-lab/esp32io-mqtt-firmware) onto an ESP32-S3 dev board (e.g. ESP32-S3-DevKitC-1), depending on your use case
+2. If you're working at 3.3V–5V logic levels, the dev board alone is sufficient ([esp32io-hw](https://github.com/noritama-lab/esp32io-hw) is not required)
+3. For industrial 24V equipment requiring isolation and protection circuitry, add the [esp32io-hw](https://github.com/noritama-lab/esp32io-hw) hardware
+4. For Python, run `pip install esp32io` or `pip install esp32io-mqtt`
+5. For Node-RED, connect directly using the standard HTTP request node or MQTT node
 
 ---
 
