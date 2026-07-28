@@ -10,6 +10,11 @@ Home Assistantでの家庭用途から、工場の24V機器を扱う産業用途
 From home automation with Home Assistant to industrial 24V equipment —  
 the goal is a **wire-it-and-control-it-from-anything I/O device**.
 
+市販のESP32-S3-DevKitC-1にファームウェアを書き込むだけで、すぐに試せます。  
+専用基板（esp32io-hw）は、工場の24V機器など絶縁・保護回路が必要な場合のみ必要です。  
+Try it instantly by flashing the firmware onto an off-the-shelf ESP32-S3-DevKitC-1 —  
+the dedicated PCB (esp32io-hw) is only needed for industrial 24V equipment requiring isolation/protection.
+
 ---
 
 ## 🗺️ プロジェクト構成 / Project Overview
@@ -25,6 +30,9 @@ This ecosystem consists of three layers: hardware, firmware (two variants), and 
 
 > ハードウェア（基板）はHTTP版・MQTT版で共通です。用途に応じてファームウェアを選択してください。  
 > The PCB is shared between the HTTP and MQTT versions. Choose the firmware that fits your use case.
+
+> ⚠️ ハードウェア（esp32io-hw）は3.3〜5V用途では不要です。市販の開発ボードだけで動作します。  
+> ⚠️ The esp32io-hw board is NOT required for 3.3–5V use cases — an off-the-shelf dev board is enough.
 
 ---
 
